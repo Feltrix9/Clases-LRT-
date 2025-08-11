@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0 20px 40px 20px;
+}
+.header { text-align: center; padding: 20px 0; background: #004d40; color: white; margin-bottom: 20px; border-radius: 6px; }
+.productos { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.producto { background: white; padding: 15px; border-radius: 8px; width: 220px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.producto img { border-radius: 6px; }
+.precio { color: #e65100; font-weight: bold; margin: 8px 0; }
+.boton { background: #00796b; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; }
+.boton:hover { background: #005a43; }
+.footer { text-align: center; margin-top: 30px; color: #666; }
