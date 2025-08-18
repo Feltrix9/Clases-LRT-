@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin:0; background: #fafafa; }
+header { background: #1976d2; color: white; text-align: center; padding: 20px; }
+.presentacion { text-align: center; margin: 20px; }
+.presentacion img { border-radius: 50%; }
+.grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+.proyecto { background: white; border-radius: 8px; padding: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); width: 200px; text-align: center; }
+.proyecto img { border-radius: 4px; max-width: 100%; }

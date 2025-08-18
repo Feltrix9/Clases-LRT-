@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; display: flex; margin: 0; background: #f8f8f8; }
+header { text-align: center; background: #333; color: white; padding: 15px; }
+main { flex: 3; padding: 20px; }
+aside { flex: 1; background: #eee; padding: 20px; }
+.post { background: white; margin-bottom: 20px; padding: 10px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.post img { max-width: 100%; border-radius: 4px; }
+.boton { display:inline-block; background:#1976d2; color:white; padding:6px 10px; text-decoration:none; border-radius:4px; }
