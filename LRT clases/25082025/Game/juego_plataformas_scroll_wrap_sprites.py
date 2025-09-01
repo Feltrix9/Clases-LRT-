@@ -19,9 +19,10 @@ gravity = 0.5
 jump_power = -12
 on_ground = False
 
-# Cargar sprites del jugador (usar "/" para compatibilidad Windows/Linux)
-sprite_idle = pygame.image.load("Game/jugador_idle.png").convert_alpha()
-sprite_jump = pygame.image.load("Game/jugador_jump.png").convert_alpha()
+# Cargar sprites del jugador
+sprite_idle = pygame.image.load("\25082025\Game\jugador_idle.png").convert_alpha()
+sprite_jump = pygame.image.load("\25082025\Game\jugador_jump.png").convert_alpha()
+
 
 # Escalar al tamaño definido del jugador
 sprite_idle = pygame.transform.scale(sprite_idle, (PLAYER_W, PLAYER_H))
@@ -89,11 +90,8 @@ while running:
     for p in plataformas:
         pygame.draw.rect(screen, VERDE, p)
 
-    # Dibujar sprite según estado (quieto fijo en idle, salto solo en aire)
-    if on_ground:
-        sprite = sprite_idle
-    else:
-        sprite = sprite_jump
+    # Dibujar sprite según estado
+    sprite = sprite_idle if on_ground else sprite_jump
     screen.blit(sprite, (x, y))
 
     pygame.display.flip()
