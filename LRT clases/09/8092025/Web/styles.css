@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { color: darkgreen; }
+.grid { display: flex; gap: 20px; }
+.card { border: 1px solid #ccc; padding: 10px; text-align: center; }
+.card img { width: 150px; height: 150px; }
+a { color: darkblue; text-decoration: none; }
+form { display: flex; flex-direction: column; gap: 10px; max-width: 300px; }

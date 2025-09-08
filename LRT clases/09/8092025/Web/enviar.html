@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Receta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Enviar tu Receta</h1>
+    <form id="formReceta">
+        <label>Nombre receta: <input type="text" id="nombre"></label><br>
+        <label>Ingredientes: <textarea id="ingredientes"></textarea></label><br>
+        <label>Instrucciones: <textarea id="instrucciones"></textarea></label><br>
+        <button type="button" onclick="guardarReceta()">Guardar Receta</button>
+    </form>
+
+    <script>
+        function guardarReceta() {
+            let nombre = document.getElementById("nombre").value;
+            let ingredientes = document.getElementById("ingredientes").value;
+            let instrucciones = document.getElementById("instrucciones").value;
+
+            let contenido = "Receta: " + nombre + "\n\nIngredientes:\n" + ingredientes + "\n\nInstrucciones:\n" + instrucciones;
+
+            let blob = new Blob([contenido], { type: "text/plain" });
+            let link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = nombre.replace(/\s+/g, "_") + ".txt";
+            link.click();
+        }
+    </script>
+</body>
+</html>
