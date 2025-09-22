@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #fff, #ffe0b2);
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #d35400;
+    font-weight: bold;
+}
+ul {
+    list-style-type: square;
+    text-align: left;
+    width: 300px;
+    margin: auto;
+}
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e67e22;
+}
