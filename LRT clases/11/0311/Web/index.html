@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM + Eventos 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>DOM + Eventos 2</h1>
+
+  <div class="toolbar">
+    <button id="btnAdd">Agregar tarjeta</button>
+    <button id="btnClear">Limpiar</button>
+    <span id="count">Tarjetas: 0</span>
+  </div>
+
+  <section id="grid" class="grid"></section>
+
+  <h2>Cursor con teclas</h2>
+  <p>Usa flechas para mover el cuadrado y toca bloques para resaltarlos.</p>
+  <div id="playArea">
+    <div id="cursor"></div>
+    <div class="block" style="left: 40px; top: 20px;"></div>
+    <div class="block" style="left: 140px; top: 80px;"></div>
+    <div class="block" style="left: 240px; top: 150px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

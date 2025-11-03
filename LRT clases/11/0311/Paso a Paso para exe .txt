@@ -1,0 +1,23 @@
+
+cómo empaquetarlo a .exe (resumen)
+
+Estructura:
+
+C:\Proyectos\SideScroller\
+  juego_side_scroller.py
+  sprites\
+    Fondo.png
+    plataforma.png
+    jugador_idle.png
+    jugador_jump.png
+
+
+Consola en esa carpeta:
+python -m venv .venv
+.venv\Scripts\activate
+pip install --upgrade pip
+pip install pygame pyinstaller
+
+
+Empaquetar:
+pyinstaller --onefile --windowed --add-data "sprites;sprites" juego_side_scroller.py

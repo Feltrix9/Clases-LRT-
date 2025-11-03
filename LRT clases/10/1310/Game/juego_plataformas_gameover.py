@@ -17,17 +17,17 @@ on_ground = False
 plataforma_bajo_pies = None  # para “llevar” al jugador con la plataforma
 
 # --- Sprites (ajusta rutas) ---
-fondo = pygame.image.load("09/8092025/Game/sprites/Fondo.png").convert()
+fondo = pygame.image.load("Game/sprites/Fondo.png").convert()
 fondo = pygame.transform.scale(fondo, (WIDTH, HEIGHT))
 
-pasto = pygame.image.load("09/8092025/Game/sprites/pasto.png").convert_alpha()
+pasto = pygame.image.load("sprites/pasto.png").convert_alpha()
 pasto = pygame.transform.scale(pasto, (WIDTH, 40))
 
-plataforma_img = pygame.image.load("09/8092025/Game/sprites/plataforma.png").convert_alpha()
+plataforma_img = pygame.image.load("sprites/plataforma.png").convert_alpha()
 plataforma_img = pygame.transform.scale(plataforma_img, (110, 18))
 
-sprite_idle = pygame.image.load("09/8092025/Game/sprites/jugador_idle.png").convert_alpha()
-sprite_jump = pygame.image.load("09/8092025/Game/sprites/jugador_jump.png").convert_alpha()
+sprite_idle = pygame.image.load("sprites/jugador_idle.png").convert_alpha()
+sprite_jump = pygame.image.load("sprites/jugador_jump.png").convert_alpha()
 sprite_idle = pygame.transform.scale(sprite_idle, (PLAYER_W, PLAYER_H))
 sprite_jump = pygame.transform.scale(sprite_jump, (PLAYER_W, PLAYER_H))
 
